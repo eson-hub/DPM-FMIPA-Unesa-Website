@@ -1,0 +1,528 @@
+    <!DOCTYPE html>
+    <html class="light" lang="id">
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>DPM FMIPA UNESA - Wadah Aspirasi &amp; Pengawas Kebijakan</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed-dim": "#e9c176",
+                        "surface-dim": "#dcd9d9",
+                        "on-primary-fixed-variant": "#7c2b2e",
+                        "surface-bright": "#fcf9f8",
+                        "secondary-fixed": "#ffdea5",
+                        "on-surface": "#1c1b1b",
+                        "background": "#fcf9f8",
+                        "primary-fixed": "#ffdad9",
+                        "on-surface-variant": "#554242",
+                        "error": "#ba1a1a",
+                        "on-tertiary-fixed-variant": "#474744",
+                        "surface-container-high": "#eae7e7",
+                        "tertiary": "#191917",
+                        "secondary-container": "#fed488",
+                        "on-primary": "#ffffff",
+                        "inverse-on-surface": "#f3f0ef",
+                        "surface-container-low": "#f6f3f2",
+                        "on-primary-container": "#df7778",
+                        "surface-container-lowest": "#ffffff",
+                        "outline-variant": "#dbc0bf",
+                        "surface-container-highest": "#e5e2e1",
+                        "on-primary-fixed": "#410008",
+                        "on-secondary": "#ffffff",
+                        "tertiary-fixed-dim": "#c8c6c2",
+                        "on-tertiary": "#ffffff",
+                        "on-tertiary-container": "#979592",
+                        "surface-variant": "#e5e2e1",
+                        "primary-fixed-dim": "#ffb3b2",
+                        "on-background": "#1c1b1b",
+                        "surface": "#fcf9f8",
+                        "primary": "#3c0007",
+                        "error-container": "#ffdad6",
+                        "surface-tint": "#9b4244",
+                        "primary-container": "#5b1218",
+                        "tertiary-container": "#2e2e2c",
+                        "on-error-container": "#93000a",
+                        "inverse-surface": "#313030",
+                        "on-secondary-container": "#785a1a",
+                        "on-secondary-fixed-variant": "#5d4201",
+                        "secondary": "#775a19",
+                        "on-tertiary-fixed": "#1c1c1a",
+                        "on-secondary-fixed": "#261900",
+                        "surface-container": "#f0eded",
+                        "on-error": "#ffffff",
+                        "outline": "#887271",
+                        "tertiary-fixed": "#e5e2de",
+                        "inverse-primary": "#ffb3b2"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "stack-sm": "8px",
+                        "section-gap": "80px",
+                        "margin-mobile": "20px",
+                        "container-max": "1280px",
+                        "gutter": "24px",
+                        "stack-md": "16px",
+                        "stack-lg": "32px",
+                        "margin-desktop": "64px"
+                    },
+                    "fontFamily": {
+                        "headline-sm": ["Work Sans"],
+                        "label-sm": ["Inter"],
+                        "headline-lg": ["Work Sans"],
+                        "display-lg": ["Work Sans"],
+                        "body-sm": ["Inter"],
+                        "body-md": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "headline-md": ["Work Sans"],
+                        "headline-lg-mobile": ["Work Sans"],
+                        "label-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }],
+                        "label-sm": ["12px", { "lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-sm": ["14px", { "lineHeight": "20px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["28px", { "lineHeight": "36px", "fontWeight": "600" }],
+                        "label-lg": ["14px", { "lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600" }]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+            display: inline-block;
+            vertical-align: middle
+        }
+
+        body {
+            background-color: #fcf9f8;
+            color: #1c1b1b
+        }
+
+        .hero-pattern {
+            background-image: linear-gradient(to right, rgba(252, 249, 248, 0.9), rgba(252, 249, 248, 0.4)), url(https://lh3.googleusercontent.com/aida-public/AB6AXuBAoYzDDyxRMUDzoo8ONQ95BqO_ezZSNB5gHETKeL_tGFkomk737H6jWkTJJymmXRLt1k8ulnmS60MAPqjQZNx4OMbnoBd5WqebnGkwJP4D0VMHjt7irTPHIOacIgoNP64kNrZpjRKE29cTz_xw4gZmuGTusxGHIgDhkvUuuDWS0NJF9jv0YNz-SrCtiCphSuGzI74JuzM9WjGo4soHoIsUNyT3TosmdEBacZzgvl9IGOO4IDgZ2Grfsm6jbiM3Izi4gRLoyd2POI4);
+            background-size: cover;
+            background-position: center
+        }
+    </style>
+</head>
+
+<body class="font-body-md text-on-surface selection:bg-secondary-container">
+    <!-- TopNavBar -->
+    <header
+        class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-surface-container/80 backdrop-blur-md shadow-sm border-b border-outline-variant/30">
+        <nav
+            class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+            <div class="flex items-center gap-3">
+                <div class="w-28 h-16">
+                    <img src="Untitled design (1).png">
+                </div>
+                <div
+                    class="font-headline-sm text-headline-sm font-bold text-primary dark:text-primary-fixed-dim leading-none uppercase">
+                    DPM FMIPA UNESA</div>
+            </div>
+            <div class="hidden md:flex items-center gap-stack-lg">
+                <a class="font-label-lg text-label-lg text-primary dark:text-primary-fixed-dim border-b-2 border-primary dark:border-primary-fixed-dim pb-1 font-semibold"
+                    href="#">Beranda</a>
+                <a class="font-label-lg text-label-lg text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors"
+                    href="#">Berita</a>
+                <a class="font-label-lg text-label-lg text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors"
+                    href="#">Profil</a>
+                     <a class="font-label-lg text-label-lg text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors"
+                    href="#">Pengawasan</a>
+                <div class="h-6 w-[1px] bg-outline-variant/50"></div>
+                <button
+</div>
+<div class="relative group">
+    <!-- BUTTON -->
+    <div class="magnetic-btn">
+        <button
+            class="bg-primary text-white font-nav text-xs font-bold py-3 px-8 rounded-full flex items-center gap-2 hover:bg-secondary transition-all duration-300">
+            HALLO DPM
+            <span class="material-symbols-outlined text-[16px] group-hover:rotate-180 transition-transform duration-300">
+                expand_more
+            </span>
+        </button>
+    </div>
+    <!-- DROPDOWN -->
+    <div
+        class="absolute right-0 top-full mt-3 w-52 bg-white rounded-2xl shadow-2xl overflow-hidden opacity-0 invisible translate-y-3 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 transition-all duration-300 z-50">
+        <div class="flex flex-col font-nav text-xs font-medium text-gray-700">
+            <a href="#"
+                class="px-6 py-4 hover:bg-accent hover:text-primary transition-colors border-b border-gray-100">
+                Aspirasi
+            </a>
+            <a href="#"
+                class="px-6 py-4 hover:bg-accent hover:text-primary transition-colors border-b border-gray-100">
+                MedPart
+            </a>
+            <a href="#"
+                class="px-6 py-4 hover:bg-accent hover:text-primary transition-colors">
+                Krisar
+            </a>
+        </div>
+    </div>
+</div>
+            <button class="md:hidden p-2 text-on-surface">
+                <span class="material-symbols-outlined">menu</span>
+            </button>
+        </nav>
+    </header>
+   <!-- Hero Section -->
+        <section class="min-h-[640px] flex items-center relative overflow-hidden">
+<img 
+    src="Salinan DSC_0296 (1).JPG"
+    class="absolute inset-0 w-full h-full object-cover"
+/>
+            <div class="absolute inset-0 bg-primary/70"></div>
+            <div
+                class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop w-full grid grid-cols-1 lg:grid-cols-2 gap-stack-lg items-center py-section-gap relative z-10">
+                <div class="space-y-stack-lg">
+                    <div
+                        class="inline-flex items-center gap-2 bg-white/20 text-white px-3 py-1 rounded-full border border-white/30">
+                        <span class="material-symbols-outlined text-[18px]">verified</span>
+                        <span class="font-label-sm text-label-sm uppercase tracking-wider">Dewan Perwakilan
+                            Mahasiswa</span>
+                    </div>
+                    <h1 class="font-display-lg text-display-lg text-white max-w-xl"
+                        style="font-family:'Abril Fatface', serif;">Halo DPM</h1>
+                    <p class="font-body-lg text-body-lg text-white/80 max-w-lg" style="font-family:'Times New Roman', serif;">
+                        DPM FMIPA UNESA hadir sebagai lembaga legislatif mahasiswa yang menjalankan fungsi legislasi,
+                        pengawasan, dan penyaluran aspirasi untuk mewujudkan FMIPA yang lebih baik.
+                    </p>
+                    <div class="flex flex-wrap gap-stack-md pt-4">
+                        <button
+        </span>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-24" id="layanan">
+        <div class="text-center mb-16 space-y-4">
+          <h2 class="font-headline-lg text-headline-lg"
+              style="font-family:'Abril Fatface', serif;">Layanan Halo DPM</h2>
+          <p class="text-secondary max-w-2xl mx-auto font-body-md text-body-md"
+             style="font-family:'Times New Roman', serif;">Pilih kategori layanan yang sesuai dengan kebutuhan Anda untuk mendapatkan respons terbaik dari tim kami.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+          <div class="bg-surface-container-low p-10 rounded-3xl border border-outline-variant/10 hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+            <div class="w-16 h-16 bg-brand-maroon/10 rounded-2xl flex items-center justify-center text-brand-maroon mb-8">
+              <span class="material-symbols-outlined text-3xl">campaign</span>
+            </div>
+            <h3 class="font-headline-lg-mobile text-headline-lg-mobile mb-4"
+                style="font-family:'Abril Fatface', serif;">Aspirasi</h3>
+            <p class="text-secondary font-body-md mb-8" style="font-family:'Times New Roman', serif;">Sampaikan ide, keluhan, atau harapan Anda untuk FMIPA UNESA yang lebih baik.</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSf7vsbN-SFlKXrhwJZPyak839tTYEl5BeL8jJD_TVDToaL-Pw/viewform?pli=1&utm_source=ig&utm_medium=social&utm_content=link_in_bio&fbclid=PAZXh0bgNhZW0CMTEAc3J0YwZhcHBfaWQPNTY3MDY3MzQzMzUyNDI3AAGnXC_S7j9wnSLDeyrp5SbBCtT0x4zZaoJKFdY5os9X4tIPlk5CCxNWzBhb6ko_aem_-8prJc62kgxhtG2bZJW7aA"
+               class="text-brand-maroon font-bold flex items-center gap-2 group"
+               style="font-family:'Times New Roman', serif;">
+              Ajukan Sekarang 
+            <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">
+            arrow_forward
+            </span>
+        </a>
+          </div>
+          <div class="bg-surface-container-low p-10 rounded-3xl border border-outline-variant/10 hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+            <div class="w-16 h-16 bg-brand-maroon/10 rounded-2xl flex items-center justify-center text-brand-maroon mb-8">
+              <span class="material-symbols-outlined text-3xl">rate_review</span>
+            </div>
+            <h3 class="font-headline-lg-mobile text-headline-lg-mobile mb-4"
+                style="font-family:'Abril Fatface', serif;">Kritik & Saran</h3>
+            <p class="text-secondary font-body-md mb-8" style="font-family:'Times New Roman', serif;">Bantu kami mengevaluasi kinerja dengan kritik yang membangun dan saran inovatif.</p>
+            <a href="https://forms.gle/ife4AisnbCQH5iZR6" class="text-brand-maroon font-bold flex items-center gap-2 group"
+               style="font-family:'Times New Roman', serif;">
+              Kirim Ulasan <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">arrow_forward</span>
+            </a>
+          </div>
+            <div class="bg-surface-container-low p-10 rounded-3xl border border-outline-variant/10 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 group cursor-pointer"
+onclick="document.getElementById('modal-wa').classList.remove('hidden')">
+
+  <!-- ICON -->
+  <div class="w-16 h-16 bg-brand-maroon/10 rounded-2xl flex items-center justify-center text-brand-maroon mb-8">
+    <span class="material-symbols-outlined text-3xl">handshake</span>
+  </div>
+
+  <!-- TITLE -->
+  <h3 class="font-headline-lg-mobile text-headline-lg-mobile mb-4 text-on-surface"
+      style="font-family:'Abril Fatface', serif;">
+
+    Media Partner
+  </h3>
+
+  <!-- DESCRIPTION -->
+<p class="text-secondary font-body-md mb-8" style="font-family:'Times New Roman', serif;">
+   Jalin kolaborasi publikasi kegiatan melalui platform resmi DPM FMIPA UNESA.
+  </p>
+
+  <!-- CTA -->
+  <div class="text-brand-maroon font-bold flex items-center gap-2"
+       style="font-family:'Times New Roman', serif;">
+       Hubungi Admin
+    <span class="material-symbols-outlined group-hover:translate-x-2 transition-transform">
+      arrow_forward
+    </span>
+  </div>
+</div>
+      </section>
+      <!-- MODAL MEDIA PARTNER -->
+<div id="modal-wa" class="hidden fixed inset-0 z-[9999] bg-black/60 backdrop-blur-sm flex items-center justify-center p-6">
+
+  <div class="bg-white rounded-3xl max-w-2xl w-full max-h-[85vh] overflow-y-auto p-8 relative">
+
+    <!-- CLOSE -->
+    <button onclick="document.getElementById('modal-wa').classList.add('hidden')"
+      class="absolute top-4 right-4 text-gray-500 hover:text-black">
+      <span class="material-symbols-outlined">close</span>
+    </button>
+
+    <!-- HEADER -->
+    <div class="flex items-center gap-4 mb-6">
+      <div class="w-14 h-14 rounded-2xl bg-[#31101B] text-white flex items-center justify-center">
+        <span class="material-symbols-outlined text-2xl">handshake</span>
+      </div>
+      <h2 class="text-2xl font-bold text-[#31101B]">Media Partner</h2>
+    </div>
+
+    <!-- ISI SCROLL -->
+    <div class="text-gray-700 leading-relaxed space-y-4 text-sm">
+
+      <p>
+        Menjadi salah satu organisasi di lingkungan Universitas Negeri Surabaya, DPM FMIPA UNESA berkomitmen untuk turut mendukung publikasi kegiatan organisasi, baik di lingkungan UNESA maupun di luar UNESA.
+      </p>
+
+      <p class="font-semibold">Adapun persyaratan dan alur pengajuan media partner bagi organisasi di luar FMIPA UNESA adalah sebagai berikut:</p>
+
+      <ol class="list-decimal pl-5 space-y-3">
+        <li>Instansi pemohon wajib mengikuti akun Instagram DPM FMIPA UNESA. Contoh: akun Instagram DPM FISH telah mengikuti akun Instagram DPM FMIPA UNESA.</li>
+
+        <li>Akun Instagram panitia kegiatan diwajibkan mengikuti akun Instagram DPM FMIPA UNESA minimal menggunakan 15 akun.</li>
+
+        <li>Panitia kegiatan diwajibkan mengikuti akun TikTok DPM FMIPA UNESA minimal menggunakan 10 akun serta memberikan like pada 2 unggahan terakhir.</li>
+
+        <li>Bukti follow akun Instagram dan TikTok tersebut dapat ditangkap layar, kemudian dikumpulkan dalam satu folder Google Drive untuk dilampirkan pada formulir pengajuan.</li>
+
+        <li>Panitia dianjurkan menonton video profil DPM FMIPA UNESA.</li>
+
+        <li>Pemohon wajib mencantumkan logo DPM FMIPA UNESA pada pamflet kegiatan.</li>
+
+        <li>Setelah formulir diisi, pamflet dan broadcast dikirim ke narahubung dengan jadwal posting yang jelas.</li>
+      </ol>
+
+      <p>
+        Khusus organisasi FMIPA UNESA, pengajuan dapat langsung menghubungi narahubung tanpa syarat di atas.
+      </p>
+
+    </div>
+
+      <!-- WHATSAPP / CHAT -->
+    <a href="https://wa.me/6285733672865"
+       target="_blank"
+       class="flex-1 bg-[#31101B] hover:bg-[#5b1218] text-white py-3 rounded-2xl flex items-center justify-center gap-2 transition-all font-semibold">
+
+      <span class="material-symbols-outlined">chat</span>
+      Chat WhatsApp
+    </a>
+
+    <!-- TELEPON -->
+    <a href="tel:+6285733672865"
+       class="flex-1 bg-gray-100 hover:bg-gray-200 text-[#31101B] py-3 rounded-2xl flex items-center justify-center gap-2 transition-all font-semibold border">
+
+      <span class="material-symbols-outlined">call</span>
+      Telepon
+    </a>
+
+  </div>
+
+</div>
+<!-- Footer -->
+<footer class="bg-primary-container text-on-primary-container py-20">
+
+    <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+
+        <!-- GRID FOOTER -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+
+            <!-- KOLOM 1 -->
+            <div>
+
+                <span
+                    class="block font-headline-md text-headline-md font-bold text-white uppercase leading-snug mb-4">
+
+                    DPM FMIPA UNESA
+
+                </span>
+
+                <p class="text-on-primary-container/80 leading-relaxed mb-6">
+                    Dewan Perwakilan Mahasiswa Fakultas Matematika dan Ilmu Pengetahuan Alam Universitas Negeri Surabaya.
+                </p>
+
+                <!-- SOCIAL MEDIA -->
+                <div class="flex gap-4">
+
+                    <!-- YOUTUBE -->
+                    <a href="https://youtube.com/@dpmfmipaunesa3146"
+                        target="_blank"
+                        class="w-12 h-12 rounded-full bg-white/10 border border-white/20 flex items-center justify-center hover:bg-red-600 transition-all duration-300">
+
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg"
+                            class="w-5 h-5 invert" />
+
+                    </a>
+
+                    <!-- INSTAGRAM -->
+                    <a href="https://instagram.com/dpmfmipaunesa/"
+                        target="_blank"
+                        class="w-12 h-12 rounded-full bg-white/10 border border-white/20 flex items-center justify-center hover:bg-pink-500 transition-all duration-300">
+
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg"
+                            class="w-5 h-5 invert" />
+
+                    </a>
+
+                    <!-- TIKTOK -->
+                    <a href="https://tiktok.com/@mediadpm?_r=1&_t=ZS-96N0IcqGevZ"
+                        target="_blank"
+                        class="w-12 h-12 rounded-full bg-white/10 border border-white/20 flex items-center justify-center hover:bg-black transition-all duration-300">
+
+                        <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/tiktok.svg"
+                            class="w-5 h-5 invert" />
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <!-- KOLOM 2 -->
+            <div>
+
+                <h4 class="text-white font-bold mb-8 uppercase tracking-widest text-sm">
+                    Tautan Cepat
+                </h4>
+
+                <ul class="space-y-4 text-on-primary-container/80">
+
+                    <li><a href="#" class="hover:text-white transition">Beranda</a></li>
+
+                    <li><a href="#" class="hover:text-white transition">Tentang DPM</a></li>
+
+                    <li><a href="#" class="hover:text-white transition">Regulasi</a></li>
+
+                    <li><a href="#" class="hover:text-white transition">Aspirasi</a></li>
+
+                    <li><a href="#" class="hover:text-white transition">Berita</a></li>
+
+                </ul>
+
+            </div>
+
+            <!-- KOLOM 3 -->
+            <div>
+
+                <h4 class="text-white font-bold mb-8 uppercase tracking-widest text-sm">
+                    Kontak Kami
+                </h4>
+
+                <div class="space-y-6 text-on-primary-container/80">
+
+                    <div class="flex gap-3">
+
+                        <span class="material-symbols-outlined text-secondary-fixed">
+                            location_on
+                        </span>
+
+                        <p>
+                            Gedung C11 FMIPA UNESA,<br>
+                            Ketintang, Surabaya, Jawa Timur 60231
+                        </p>
+
+                    </div>
+
+                    <div class="flex gap-3">
+
+                        <span class="material-symbols-outlined text-secondary-fixed">
+                            mail
+                        </span>
+
+                        <p>dpmfmipa@unesa.ac.id</p>
+
+                    </div>
+
+                    <div class="flex gap-3">
+
+                        <span class="material-symbols-outlined text-secondary-fixed">
+                            call
+                        </span>
+
+                        <p>+62 815-5354-7649</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- KOLOM 4 -->
+            <div>
+
+                <h4 class="text-white font-bold mb-8 uppercase tracking-widest text-sm">
+                    Lokasi Sekretariat
+                </h4>
+
+                <div class="relative rounded-2xl overflow-hidden border border-white/10">
+
+                    <img src="Screenshot 2026-05-14 230323.png"
+                        class="w-full h-56 object-cover" />
+
+                    <a href="https://maps.app.goo.gl/hKfhvFYYoAJCjFvLA"
+                        target="_blank"
+                        class="absolute bottom-4 right-4 w-12 h-12 rounded-full bg-black/40 backdrop-blur-md flex items-center justify-center text-white hover:bg-primary transition-all duration-300">
+
+                        <span class="material-symbols-outlined">
+                            location_on
+                        </span>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- COPYRIGHT -->
+        <div class="border-t border-white/10 mt-16 pt-8 text-center">
+
+            <p class="text-on-primary-container/60">
+                © 2026 DPM FMIPA UNESA. All rights reserved.
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
